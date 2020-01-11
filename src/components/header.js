@@ -21,12 +21,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     <header>
-      <div
-        className="header-bg cover bg-left bg-center-l"
-        style={{
-          backgroundImage: `${require("../images/header-bg.jpg")}`,
-        }}
-      >
+      <div className="header-bg cover bg-left bg-center-l">
         {/* <HeaderBackground /> */}
         <div className="site-header relative pb5 pb6-m pb7-l">
           <Navigation />

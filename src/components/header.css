@@ -1,8 +1,5 @@
 .site-header {
-  background: #263b69;
-}
-
-.header-bg {
+  background-size: cover;
   background-image: url("../images/header-bg.jpg");
 }
 
