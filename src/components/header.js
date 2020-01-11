@@ -1,33 +1,66 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import Logo from "./icons/logo"
+import Navigation from "./navigation"
+import PhoneIcon from "./icons/phone"
+import HeaderBackground from "./header-background"
+
 import React from "react"
+import "./header.css"
+import "./common.css"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header>
+    <div className="top-bar">
+      <div className="top-bar-inner mw8 center flex items-center w-100 justify-end">
+        <div className="top-bar-email pv1 ph2">info@bwr.com</div>
+        <div className="top-bar-phone pv1 ph2">
+          {/* <PhoneIcon className="mr1" /> */}
+          818.800.4645
+        </div>
+      </div>
     </div>
+    <header>
+      <div
+        className="header-bg cover bg-left bg-center-l"
+        style={{
+          backgroundImage: `${require("../images/header-bg.jpg")}`,
+        }}
+      >
+        {/* <HeaderBackground /> */}
+        <div className="site-header relative pb5 pb6-m pb7-l">
+          <Navigation />
+          <div className="tc-l mt4 mt5-m mt6-l ph3">
+            <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">
+              Welcome to Breakwater Health Care Services
+            </h1>
+            <h2 className="fw1 f3 white-80 mt3 mb4">
+              Please let us know whether you are a canidate or a company who
+              needs to hire
+            </h2>
+            {/* <a
+              className="button f6 no-underline grow dib v-mid white ba b--blue ph3 pv2 mb3"
+              href="/"
+            >
+              Call to Action
+            </a> */}
+            <a
+              className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"
+              href=""
+            >
+              I am a canidate
+            </a>
+            <span className="dib v-mid ph3 white-70 mb3">or</span>
+            <a
+              className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"
+              href=""
+            >
+              I am a hiring manager
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
   </header>
 )
 

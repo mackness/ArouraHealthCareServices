@@ -68,11 +68,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <noscript>{`
-        <link rel="stylesheet" type="text/css" href="${require("../css/index.css")}" />
-    `}</noscript>
-    </Helmet>
+    ></Helmet>
   )
 }
 
