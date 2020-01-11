@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e995b752-8602-4ca3-909e-3044e60eb8d8/deploy-status)](https://app.netlify.com/sites/laughing-kowalevski-147cc4/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
