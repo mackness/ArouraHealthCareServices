@@ -1,3 +1,12 @@
 .button {
-  background: #263b69;
+  background: #36a85b;
+}
+
+.text-shadow {
+  text-shadow: 0 0 1px rgba(0, 0, 0.5);
+}
+
+.divider {
+  height: 2px;
+  width: 90px;
 }

@@ -1,0 +1,12 @@
+.shadow {
+  box-shadow: 0 0 37px rgba(0, 0, 0, 0.25);
+}
+
+.matrix {
+  margin-top: -40px;
+  position: relative;
+}
+
+.matrix-title {
+  color: #192f59;
+}

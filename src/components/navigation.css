@@ -2,6 +2,10 @@
   display: inline-block;
 }
 
+.active {
+  color: #36a85b !important;
+}
+
 .fw6 {
   font-weight: 600;
 }

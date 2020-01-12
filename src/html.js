@@ -15,13 +15,17 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link
-          href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+          href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Serif&display=swap"
           rel="stylesheet"
         ></link>
         <link
           rel="stylesheet"
           href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
         ></link>
+        <script
+          src="https://kit.fontawesome.com/ab16c53091.js"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

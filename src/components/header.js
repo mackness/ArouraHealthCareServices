@@ -23,23 +23,31 @@ const Header = ({ siteTitle }) => (
     <header>
       <div className="header-bg cover bg-left bg-center-l">
         {/* <HeaderBackground /> */}
+        <Navigation />
         <div className="site-header relative pb5 pb6-m pb7-l">
-          <Navigation />
           <div className="tc-l mt4 mt5-m mt6-l ph3">
-            <h1 className="f2 f1-l fw2 white-90 mb0 lh-title">
+            <h1 className="serif text-shadow f2 f1-l fw2 white-90 mb2 lh-title">
               Welcome to Breakwater Health Care Services
             </h1>
-            <h2 className="fw1 f3 white-80 mt3 mb4">
+            <div className="divider bg-white-80 mv4"></div>
+            <h2 className="subtitle fw1 sans-serif white-80 f4 mb4 lh-copy">
               Please let us know whether you are a canidate or a company who
               needs to hire
             </h2>
-            {/* <a
-              className="button f6 no-underline grow dib v-mid white ba b--blue ph3 pv2 mb3"
+            <a
+              className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3"
               href="/"
             >
-              Call to Action
-            </a> */}
+              I am a candidate
+            </a>
+            <span className="dib v-mid ph3 white-70 mb3">or</span>
             <a
+              className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3"
+              href="/"
+            >
+              I am a hiring manager
+            </a>
+            {/* <a
               className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"
               href=""
             >
@@ -51,7 +59,7 @@ const Header = ({ siteTitle }) => (
               href=""
             >
               I am a hiring manager
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

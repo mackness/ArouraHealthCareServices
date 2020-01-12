@@ -1,6 +1,23 @@
 .site-header {
   background-size: cover;
   background-image: url("../images/header-bg.jpg");
+  background-position: top;
+  padding-top: 1px;
+  position: relative;
+}
+
+/* .site-header:before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+} */
+
+.subtitle {
+  font-size: 16px;
 }
 
 .top-bar {
@@ -10,6 +27,7 @@
 
 .top-bar-phone {
   background: #36a85b;
+  font-weight: bold;
 }
 
 .border-box {
