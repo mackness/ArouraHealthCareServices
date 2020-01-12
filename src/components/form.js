@@ -27,7 +27,7 @@ class Form extends React.Component {
     this.setState({
       submitState: submitState.pending,
     })
-    fetch("https://laughing-kowalevski-147cc4.netlify.com/", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({ "form-name": "contact", ...this.state }),
