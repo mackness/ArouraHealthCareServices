@@ -2,7 +2,7 @@ import React from "react"
 import "./navigation.css"
 
 function isActive(path) {
-  return window && window.location.pathname === path
+  return typeof window === "object" && window.location.pathname === path
 }
 
 export default function Navigation() {
