@@ -21,7 +21,7 @@ const IndexPage = () => (
     </Card>
     <Card
       style={{
-        minHeight: "583px",
+        minHeight: "550px",
       }}
     >
       <ContactFrom />

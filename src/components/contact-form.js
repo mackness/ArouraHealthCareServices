@@ -7,7 +7,7 @@ export default function ContactForm() {
       {({ state, handleChange, handleSubmit }) => {
         return (
           <div className="sans-serif">
-            <h4 className="brand-blue sans-serif mt2 mb2 fw7 f5 lh-copy ma0">
+            <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
               Reach out to us!
             </h4>
             <small id="name-desc" className="f6 black-60 db mb2">
