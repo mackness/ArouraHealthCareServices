@@ -67,7 +67,7 @@ class Form extends React.Component {
 
     if (this.state.submitState === submitState.thanks) {
       return (
-        <div className="w-100 h-100 flex justify-center items-center flex-column abslute top-0 left-0 right-0 bottom-0">
+        <div className="w-100 h-100 flex justify-center items-center flex-column absolute absolute--fill">
           <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
             Thanks for reaching out!
           </p>

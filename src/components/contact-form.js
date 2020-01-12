@@ -79,7 +79,7 @@ export default function ContactForm() {
                 />
               </div>
               <button
-                className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3 w-100 tc mt3"
+                className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3 w-100 tc mt3 mb0"
                 type="submit"
               >
                 Submit
