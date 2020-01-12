@@ -19,7 +19,11 @@ const IndexPage = () => (
     >
       <ServicesMatrix />
     </Card>
-    <Card>
+    <Card
+      style={{
+        minHeight: "583px",
+      }}
+    >
       <ContactFrom />
     </Card>
   </Layout>

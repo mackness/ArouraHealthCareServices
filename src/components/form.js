@@ -22,6 +22,10 @@ class Form extends React.Component {
       .join("&")
   }
 
+  resetFormState = () => {
+    setTimeout(() => this.setState({ submitState: submitState.thanks }))
+  }
+
   handleSubmit = event => {
     event.preventDefault()
     this.setState({
@@ -33,14 +37,20 @@ class Form extends React.Component {
       body: this.encode({ "form-name": "contact", ...this.state }),
     })
       .then(() =>
-        this.setState({
-          submitState: submitState.success,
-        })
+        this.setState(
+          {
+            submitState: submitState.thanks,
+          },
+          this.resetFormState
+        )
       )
       .catch(error =>
-        this.setState({
-          submitState: submitState.error,
-        })
+        this.setState(
+          {
+            submitState: submitState.thanks,
+          },
+          this.resetFormState
+        )
       )
   }
 
@@ -53,6 +63,19 @@ class Form extends React.Component {
 
     if (this.state.submitState === submitState.pending) {
       return <Loader />
+    }
+
+    if (this.state.submitState === submitState.thanks) {
+      return (
+        <div className="w-100 h-100 flex justify-center items-center flex-column abslute top-0 left-0 right-0 bottom-0">
+          <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
+            Thanks for reaching out!
+          </p>
+          <p className="matrix-subtitle black-70">
+            We will be in touch very soon.
+          </p>
+        </div>
+      )
     }
 
     return this.props.children({
