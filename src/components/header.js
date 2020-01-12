@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
               Welcome to Breakwater Health Care Services
             </h1>
             <div className="divider bg-white-90 mv4"></div>
-            <h2 className="subtitle fw1 sans-serif white-80 f4 mb4 lh-copy">
+            <h2 className="subtitle fw1 sans-serif white-90 f4 mb4 lh-copy">
               Please let us know whether you are a canidate or a company who
               needs to hire
             </h2>
