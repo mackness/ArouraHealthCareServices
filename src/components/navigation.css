@@ -3,6 +3,8 @@
 }
 
 .active {
+  font-weight: bold;
+  font-style: italic;
   color: #36a85b !important;
 }
 

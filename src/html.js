@@ -15,7 +15,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link
-          href="https://fonts.googleapis.com/css?family=Lato:300,400,700|PT+Serif&display=swap"
+          href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i|PT+Serif&display=swap"
           rel="stylesheet"
         ></link>
         <link
