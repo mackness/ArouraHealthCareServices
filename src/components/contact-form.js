@@ -17,6 +17,8 @@ export default function ContactForm() {
               className="black-80 mb0"
               onSubmit={handleSubmit}
               data-netlify="true"
+              name="homepage-contact-from"
+              data-netlify-honeypot="bot-field"
             >
               <div className="measure">
                 <label htmlFor="name" className="f6 b db mb2">

@@ -34,7 +34,10 @@ class Form extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact", ...this.state }),
+      body: this.encode({
+        ["form-name"]: event.target.form.getAttribute("name"),
+        ...this.state,
+      }),
     })
       .then(() =>
         this.setState(
