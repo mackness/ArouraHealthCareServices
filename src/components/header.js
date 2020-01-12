@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => (
               className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3"
               href="/"
             >
-              I am a hiring manager
+              I am a hiring
             </a>
             {/* <a
               className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"
