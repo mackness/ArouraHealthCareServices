@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "./navigation.css"
 
 function isActive(path) {
@@ -6,39 +7,38 @@ function isActive(path) {
 }
 
 export default function Navigation() {
+  const activeStyle = {
+    fontWeight: "bold",
+    fontStyle: "italic",
+    color: "#36a85b ",
+  }
   return (
     <header className="w-100 pv2 pv4-ns ph4-m ph5-l">
       <nav className="f6 fw6 ttu tracked mw8 center flex justify-center">
-        <a
-          className={`${isActive("/") ? "active" : ""} link dim dib mr3`}
-          href="/"
-          title="Home"
-        >
+        <Link to="/" className="link dim dib mr3" activeStyle={activeStyle}>
           Home
-        </a>
-        <a
-          className={`${isActive("/about") ? "active" : ""} link dim dib mr3`}
-          href="/about"
-          title="About"
+        </Link>
+        <Link
+          to="/about"
+          className="link dim dib mr3"
+          activeStyle={activeStyle}
         >
           About
-        </a>
-        <a
-          className={`${
-            isActive("/services") ? "active" : ""
-          } link dim dib mr3`}
-          href="/services"
-          title="Store"
+        </Link>
+        <Link
+          to="/services"
+          className="link dim dib mr3"
+          activeStyle={activeStyle}
         >
-          services
-        </a>
-        <a
-          className={`${isActive("/contact") ? "active" : ""} link dim dib`}
-          href="/contact"
-          title="Contact"
+          Services
+        </Link>
+        <Link
+          to="/contact"
+          className="link dim dib mr3"
+          activeStyle={activeStyle}
         >
           Contact
-        </a>
+        </Link>
       </nav>
     </header>
   )
