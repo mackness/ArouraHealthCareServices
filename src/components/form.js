@@ -35,7 +35,7 @@ class Form extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({
-        ["form-name"]: event.target.form.getAttribute("name"),
+        ["form-name"]: event.target.getAttribute("name"),
         ...this.state,
       }),
     })
