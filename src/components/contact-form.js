@@ -13,7 +13,11 @@ export default function ContactForm() {
             <small id="name-desc" className="f6 black-60 db mb2">
               And we will get back to you as soon as we can!
             </small>
-            <form className="black-80 mb0" onSubmit={handleSubmit}>
+            <form
+              className="black-80 mb0"
+              onSubmit={handleSubmit}
+              data-netlify="true"
+            >
               <div className="measure">
                 <label htmlFor="name" className="f6 b db mb2">
                   Name <span className="normal black-60">(optional)</span>
