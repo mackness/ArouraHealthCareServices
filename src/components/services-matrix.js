@@ -14,7 +14,7 @@ export default function ServicesMatrix() {
               className="fas fa-concierge-bell"
               color="#192f59"
             />
-            <p className="blue mt2 mb2 fw7 f5 lh-copy ma0">
+            <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
               Dedicated Talent Services
             </p>
             <p className="matrix-subtitle black-70">
@@ -31,7 +31,7 @@ export default function ServicesMatrix() {
               className="fab fa-algolia"
               color="#192f59"
             />
-            <p className="blue mt2 mb2 fw7 f5 lh-copy ma0">
+            <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
               Dedicated Talent Services
             </p>
             <p className="matrix-subtitle black-70">
@@ -44,7 +44,7 @@ export default function ServicesMatrix() {
         <div className="fl w-100 w-25-ns">
           <div className="bg-white">
             <FaIcon fontSize="35px" className="fas fa-users" color="#192f59" />
-            <p className="blue mt2 mb2 fw7 f5 lh-copy ma0">
+            <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
               Dedicated Talent Services
             </p>
             <p className="matrix-subtitle black-70">
@@ -61,7 +61,7 @@ export default function ServicesMatrix() {
               className="fas fa-concierge-bell"
               color="#192f59"
             />
-            <p className="blue mt2 mb2 fw7 f5 lh-copy ma0">
+            <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
               Dedicated Talent Services
             </p>
             <p className="matrix-subtitle black-70">
