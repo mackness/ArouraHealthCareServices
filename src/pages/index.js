@@ -7,6 +7,8 @@ import ServicesMatrix from "../components/services-matrix"
 import SEO from "../components/seo"
 import ContactFrom from "../components/contact-form"
 import Card from "../components/card"
+import Footer from "../components/footer"
+// import Map from "../components/map"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +27,9 @@ const IndexPage = () => (
       }}
     >
       <ContactFrom />
+      {/* <Map /> */}
     </Card>
+    <Footer />
   </Layout>
 )
 

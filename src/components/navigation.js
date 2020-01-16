@@ -13,7 +13,7 @@ export default function Navigation() {
     color: "#36a85b ",
   }
   return (
-    <header className="w-100 pv2 pv4-ns ph4-m ph5-l">
+    <header className="w-100 pv2 pv4-ns ph4-m ph5-l bg-white">
       <nav className="f6 fw6 ttu tracked mw8 center flex justify-center">
         <Link to="/" className="link dim dib mr3" activeStyle={activeStyle}>
           Home
