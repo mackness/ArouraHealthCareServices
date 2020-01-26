@@ -32,11 +32,7 @@ export default function Navigation() {
         >
           Services
         </Link>
-        <Link
-          to="/contact"
-          className="link dim dib mr3"
-          activeStyle={activeStyle}
-        >
+        <Link to="/contact" className="link dim dib" activeStyle={activeStyle}>
           Contact
         </Link>
       </nav>

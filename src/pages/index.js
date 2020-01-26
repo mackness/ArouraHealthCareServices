@@ -21,14 +21,38 @@ const IndexPage = () => (
     >
       <ServicesMatrix />
     </Card>
-    <Card
-      style={{
-        minHeight: "550px",
-      }}
-    >
-      <ContactFrom />
-      {/* <Map /> */}
-    </Card>
+    <div className="flex-l mw8 center mb4-l">
+      <Card
+        style={{
+          flex: 1,
+        }}
+      >
+        <ContactFrom />
+        {/* <Map /> */}
+      </Card>
+      <Card
+        style={{
+          flex: 1,
+        }}
+      >
+        <h4 class="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
+          Reach out to us!
+        </h4>
+        <p class="matrix-subtitle black-70">
+          If you are looking for talented professionals, contact Sterling and
+          Landers. We're recruiting specialists and have been a valuable
+          resource partner for many clients since 2013. If you are looking for
+          talented professionals, contact Sterling and Landers. We're recruiting
+          specialists and have been a valuable resource partner for many clients
+          since 2013. If you are looking for talented professionals, contact
+          Sterling and Landers. We're recruiting specialists and have been a
+          valuable resource partner for many clients since 2013. If you are
+          looking for talented professionals, contact Sterling and Landers.
+          We're recruiting specialists and have been a valuable resource partner
+          for many clients since 2013.
+        </p>
+      </Card>
+    </div>
     <Footer />
   </Layout>
 )

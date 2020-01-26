@@ -6,8 +6,8 @@ import FaIcon from "./icons/fa-icon"
 export default function ServicesMatrix() {
   return (
     <div className="mw9 center">
-      <div className="cf ph2-ns">
-        <div className="fl w-100 w-25-ns">
+      <div className="cf ph2-ns flex-l">
+        <div className="fl w-100 w-25-ns pr4-l">
           <div className="bg-white">
             <FaIcon
               fontSize="35px"
@@ -24,7 +24,7 @@ export default function ServicesMatrix() {
             </p>
           </div>
         </div>
-        <div className="fl w-100 w-25-ns">
+        <div className="fl w-100 w-25-ns pr4-l">
           <div className="bg-white">
             <FaIcon
               fontSize="35px"
@@ -41,7 +41,7 @@ export default function ServicesMatrix() {
             </p>
           </div>
         </div>
-        <div className="fl w-100 w-25-ns">
+        <div className="fl w-100 w-25-ns pr4-l">
           <div className="bg-white">
             <FaIcon fontSize="35px" className="fas fa-users" color="#192f59" />
             <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">

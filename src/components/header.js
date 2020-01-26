@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
     <div className="top-bar">
       <div className="top-bar-inner mw8 center flex items-center w-100 justify-end">
         <div className="top-bar-email pv1 ph2">info@bwr.com</div>
-        <div className="top-bar-phone pv1 ph2">
+        <div className="top-bar-phone pv1 ph2 ph3 ph4-l">
           {/* <PhoneIcon className="mr1" /> */}
           818.800.4645
         </div>
@@ -29,8 +29,10 @@ const Header = ({ siteTitle }) => (
             <h1 className="serif text-shadow f2 f1-l fw2 white mb2 lh-title">
               Welcome to Breakwater Health Care Services
             </h1>
-            <div className="divider bg-white-90 mv4"></div>
-            <h2 className="subtitle fw1 sans-serif white-90 f4 mb4 lh-copy">
+            <div className="flex justify-center-l">
+              <div className="divider bg-white-90 mv4 mh"></div>
+            </div>
+            <h2 className="subtitle fw1 fw3-l sans-serif white-90 f3-l mb4 lh-copy lh-title-l">
               Please let us know whether you are a canidate or a company who
               needs to hire
             </h2>
