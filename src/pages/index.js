@@ -94,7 +94,7 @@ const IndexPage = () => (
             been a valuable resource partner for many clients since 2013.
           </p>
         </Card>
-        <Card>
+        <Card backgroundColor={"#182a4f"} cardClassName="pa3 relative">
           <NewsletterForm />
         </Card>
       </div>

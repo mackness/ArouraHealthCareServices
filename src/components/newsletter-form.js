@@ -1,5 +1,6 @@
 import React from "react"
 import Form from "./form"
+import FaIcon from "./icons/fa-icon"
 
 export default function NewsletterForm() {
   return (
@@ -12,10 +13,19 @@ export default function NewsletterForm() {
       {({ state, handleChange, handleSubmit }) => {
         return (
           <div>
-            <form class="mw7 center br2-ns ma0">
+            <form class="mw7 center br2 ph4 pv2 ma0 bg-white">
+              <FaIcon
+                fontSize="35px"
+                className="fas fa-mail-bulk"
+                color="#192f59"
+                style={{
+                  position: "absolute",
+                  right: "30px",
+                }}
+              />
               <fieldset class="cf bn ma0 pa0">
                 <h4 class="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
-                  Sign up for our newsletter!
+                  Newsletter!
                 </h4>
                 <div class="cf">
                   <label htmlFor="email" className="f6 b db mb2">
