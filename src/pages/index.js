@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import ContactFrom from "../components/contact-form"
 import Card from "../components/card"
 import Footer from "../components/footer"
+import NewsletterForm from "../components/newsletter-form"
 // import Map from "../components/map"
 
 const IndexPage = () => (
@@ -70,28 +71,33 @@ const IndexPage = () => (
         <ContactFrom />
         {/* <Map /> */}
       </Card>
-      <Card
+      <div
         style={{
           flex: 1,
         }}
       >
-        <h4 class="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
-          Reach out to us!
-        </h4>
-        <p class="matrix-subtitle black-70">
-          If you are looking for talented professionals, contact Sterling and
-          Landers. We're recruiting specialists and have been a valuable
-          resource partner for many clients since 2013. If you are looking for
-          talented professionals, contact Sterling and Landers. We're recruiting
-          specialists and have been a valuable resource partner for many clients
-          since 2013. If you are looking for talented professionals, contact
-          Sterling and Landers. We're recruiting specialists and have been a
-          valuable resource partner for many clients since 2013. If you are
-          looking for talented professionals, contact Sterling and Landers.
-          We're recruiting specialists and have been a valuable resource partner
-          for many clients since 2013.
-        </p>
-      </Card>
+        <Card>
+          <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
+            Reach out to us!
+          </h4>
+          <p className="matrix-subtitle black-70">
+            If you are looking for talented professionals, contact Sterling and
+            Landers. We're recruiting specialists and have been a valuable
+            resource partner for many clients since 2013. If you are looking for
+            talented professionals, contact Sterling and Landers. We're
+            recruiting specialists and have been a valuable resource partner for
+            many clients since 2013. If you are looking for talented
+            professionals, contact Sterling and Landers. We're recruiting
+            specialists and have been a valuable resource partner for many
+            clients since 2013. If you are looking for talented professionals,
+            contact Sterling and Landers. We're recruiting specialists and have
+            been a valuable resource partner for many clients since 2013.
+          </p>
+        </Card>
+        <Card>
+          <NewsletterForm />
+        </Card>
+      </div>
     </div>
     <Footer />
   </Layout>

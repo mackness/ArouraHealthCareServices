@@ -24,7 +24,11 @@ const Header = ({ siteTitle, isIndex, children }) => (
       <div className="header-bg cover bg-left bg-center-l">
         {/* <HeaderBackground /> */}
         <Navigation />
-        <div className={`site-header relative ${"pb5 pb6-m pb7-l"}`}>
+        <div
+          className={`site-header relative ${
+            isIndex ? "pb5 pb6-m pb7-l" : "pb4 pb5-m"
+          }`}
+        >
           {children}
         </div>
       </div>

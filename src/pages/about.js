@@ -14,19 +14,22 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <Header>
-      <div class="mw8 center pa3">
-        <h2 class="serif text-shadow f2 f1-l fw2 white mb2 lh-title mw8 cetner">
+      <div className="mw8 center pa4 tc-ns mt4-ns">
+        <h2 className="serif text-shadow f2 fw1 white mb2 lh-title">
           About Breakwater Health Care Services
         </h2>
+        <div className="flex justify-center-ns">
+          <div className="divider bg-white-90 mv4 mh"></div>
+        </div>
       </div>
     </Header>
-    <div class="mw8 center">
+    <div className="mw8 center">
       <Card
         style={{
           marginTop: "-65px",
         }}
       >
-        <h4 class="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
+        <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
           Reach out to us!
         </h4>
         <p>
