@@ -28,15 +28,14 @@ export default function NewsletterForm() {
                   Newsletter!
                 </h4>
                 <div class="cf">
-                  <label htmlFor="email" className="f6 b db mb2">
+                  <label htmlFor="newsletter-email" className="f6 b db mb2">
                     E-mail <span className="normal black-60">(required)</span>
                   </label>
                   <input
-                    id="email"
-                    name="email"
+                    id="newsletter-email"
+                    name="newsletter-email"
                     type="email"
                     className="input-reset ba b--black-20 pa2 mb2 db w-100"
-                    type="text"
                     onChange={handleChange}
                     value={state.email || ""}
                     aria-describedby="email-desc"
