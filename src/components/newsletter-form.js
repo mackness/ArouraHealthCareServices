@@ -13,7 +13,7 @@ export default function NewsletterForm() {
       {({ state, handleChange, handleSubmit }) => {
         return (
           <div>
-            <form class="mw7 center br2 ph4 pv2 ma0 bg-white">
+            <form className="mw7 center br2 ph4 pv2 ma0 bg-white">
               <FaIcon
                 fontSize="35px"
                 className="fas fa-mail-bulk"
@@ -23,11 +23,11 @@ export default function NewsletterForm() {
                   right: "30px",
                 }}
               />
-              <fieldset class="cf bn ma0 pa0">
-                <h4 class="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
+              <fieldset className="cf bn ma0 pa0">
+                <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
                   Newsletter!
                 </h4>
-                <div class="cf">
+                <div className="cf">
                   <label htmlFor="newsletter-email" className="f6 b db mb2">
                     E-mail <span className="normal black-60">(required)</span>
                   </label>

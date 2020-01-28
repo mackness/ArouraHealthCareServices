@@ -26,19 +26,19 @@ const IndexPage = () => (
           Please let us know whether you are a canidate or a company who needs
           to hire
         </h2>
-        <a
+        <Link
           className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3"
-          href="/"
+          to="/candidate"
         >
           I am a candidate
-        </a>
+        </Link>
         <span className="dib v-mid ph3 white-70 mb3">or</span>
-        <a
+        <Link
           className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3"
-          href="/"
+          to="/employer"
         >
           I am a hiring
-        </a>
+        </Link>
         {/* <a
               className="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3"
               href=""

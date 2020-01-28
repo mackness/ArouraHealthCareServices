@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import ContactFrom from "../components/contact-form"
 import Card from "../components/card"
 import Footer from "../components/footer"
+import NewsletterForm from "../components/newsletter-form"
 // import Map from "../components/map"
 
 const ServicesPage = () => (
@@ -23,8 +24,9 @@ const ServicesPage = () => (
         </div>
       </div>
     </Header>
-    <div className="mw8 center">
+    <div className="mw8 center flex">
       <Card
+        className="w-75-l"
         style={{
           marginTop: "-65px",
         }}
@@ -72,6 +74,11 @@ const ServicesPage = () => (
           for many clients since 2013.
         </p>
       </Card>
+      <div className="w-34-l">
+        <Card backgroundColor={"#182a4f"} cardClassName="pa3 relative">
+          <NewsletterForm />
+        </Card>
+      </div>
     </div>
     <Footer />
   </Layout>
