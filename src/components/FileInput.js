@@ -27,7 +27,7 @@ export default function TextInput({
         onChange={onChange}
         value={value || ""}
         aria-describedby={`${name}-desc`}
-        accept=".doc,.docx,.pdf,.odt,.rtf,.epub"
+        accept=".doc, .docx, .pdf, .odt, .rtf, .epub"
       />
     </div>
   )
