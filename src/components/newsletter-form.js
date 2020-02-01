@@ -8,12 +8,19 @@ export default function NewsletterForm() {
       message={{
         title: "Thanks for the signup!",
         subtitle: "Keep an eye out for emails from us.",
+        color: "#fff",
       }}
     >
       {({ state, handleChange, handleSubmit }) => {
         return (
           <div>
-            <form className="mw7 center br2 ph4 pv2 ma0 bg-white">
+            <form
+              className="mw7 center br2 ph4 pv2 ma0 bg-white"
+              onSubmit={handleSubmit}
+              data-netlify="true"
+              name="newsletter-signup-form"
+              data-netlify-honeypot="bot-field"
+            >
               <FaIcon
                 fontSize="35px"
                 className="fas fa-mail-bulk"
@@ -28,16 +35,16 @@ export default function NewsletterForm() {
                   Newsletter!
                 </h4>
                 <div className="cf">
-                  <label htmlFor="newsletter-email" className="f6 b db mb2">
+                  <label htmlFor="newsletterEmail" className="f6 b db mb2">
                     E-mail <span className="normal black-60">(required)</span>
                   </label>
                   <input
-                    id="newsletter-email"
-                    name="newsletter-email"
+                    id="newsletterEmail"
+                    name="newsletterEmail"
                     type="email"
                     className="input-reset ba b--black-20 pa2 mb2 db w-100"
                     onChange={handleChange}
-                    value={state.email || ""}
+                    value={state.newsletterEmail || ""}
                     aria-describedby="email-desc"
                   />
                   <button

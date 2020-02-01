@@ -71,12 +71,26 @@ class Form extends React.Component {
     if (this.state.submitState === submitState.thanks) {
       return (
         <div className="w-100 h-100 flex justify-center items-center flex-column absolute absolute--fill">
-          <p className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0">
+          <p
+            className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0"
+            style={
+              this.props.message.color
+                ? { color: this.props.message.color }
+                : {}
+            }
+          >
             {this.props.message
               ? this.props.message.title
               : `Thanks for reaching out!`}
           </p>
-          <p className="matrix-subtitle black-70">
+          <p
+            className="matrix-subtitle black-70"
+            style={
+              this.props.message.color
+                ? { color: this.props.message.color }
+                : {}
+            }
+          >
             {this.props.message
               ? this.props.message.subtitle
               : `We will be in touch very soon.`}

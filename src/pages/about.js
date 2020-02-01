@@ -24,7 +24,7 @@ const AboutPage = () => (
         </div>
       </div>
     </Header>
-    <div className="mw8 center flex">
+    <div className="mw8 center flex-l">
       <Card
         className="w-75-l"
         style={{
@@ -75,7 +75,11 @@ const AboutPage = () => (
         </p>
       </Card>
       <div className="w-34-l">
-        <Card backgroundColor={"#182a4f"} cardClassName="pa3 relative">
+        <Card
+          backgroundColor={"#182a4f"}
+          cardClassName="pa3 relative"
+          style={{ minHeight: "300px" }}
+        >
           <NewsletterForm />
         </Card>
       </div>

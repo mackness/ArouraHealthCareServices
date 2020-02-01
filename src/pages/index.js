@@ -94,7 +94,11 @@ const IndexPage = () => (
             been a valuable resource partner for many clients since 2013.
           </p>
         </Card>
-        <Card backgroundColor={"#182a4f"} cardClassName="pa3 relative">
+        <Card
+          backgroundColor={"#182a4f"}
+          cardClassName="pa3 relative"
+          style={{ minHeight: "300px" }}
+        >
           <NewsletterForm />
         </Card>
       </div>
