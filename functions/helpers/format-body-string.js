@@ -1,4 +1,4 @@
-exports.default = function(fields) {
+module.exports = function(fields) {
   try {
     return fields
       .reduce((acc, field, idx) => {

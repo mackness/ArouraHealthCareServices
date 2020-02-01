@@ -1,5 +1,5 @@
 const formatBodyString = require("./format-body-string")
-const decodePayload = require("./decode-paylaod")
+const decodePayload = require("./decode-payload")
 
 module.exports = {
   decodePayload,

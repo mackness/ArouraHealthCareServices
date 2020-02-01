@@ -6,7 +6,7 @@ const client = require("twilio")(
 
 const { formatBodyString } = require("../helpers")
 
-exports.default = function(body, callback) {
+module.exports = function(body, callback) {
   client.messages
     .create({
       body: formatBodyString(_.get(body, "payload.ordered_human_fields")),

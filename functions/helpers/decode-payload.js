@@ -1,4 +1,4 @@
-exports.default = function(payload) {
+module.exports = function(payload) {
   try {
     return JSON.parse(payload)
   } catch {
