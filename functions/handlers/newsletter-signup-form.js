@@ -36,12 +36,15 @@ module.exports = function(body, callback) {
             "Error(newsletter-signup-form): Failed to write a row to the newsletter spreadsheet",
             { err }
           )
-          return
         }
 
         console.log(
           "Info(newsletter-signup-form): Wrote a row to the newsletter spreadsheet"
         )
+        return callback({
+          status: "success",
+          code: 200,
+        })
       }
     )
   })
