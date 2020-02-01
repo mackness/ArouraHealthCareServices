@@ -1,34 +1,26 @@
-var nodemailer = require("nodemailer")
+require("dotenv").config()
+const client = require("twilio")(
+  process.env.TWILLIO_ACCOUNT_SID,
+  process.env.TWILLIO_ACCOUNT_AUTH_TOKEN
+)
 
 exports.handler = function(event, context, callback) {
-  var transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: "youremail@gmail.com",
-      pass: "yourpassword",
-    },
-  })
-
-  var mailOptions = {
-    from: "macksol@gmail.com",
-    to: "myfriend@yahoo.com",
-    subject: "Sending Email using Node.js",
-    text: "That was easy!",
-  }
-
-  transporter.sendMail(mailOptions, function(error, info) {
-    if (error) {
-      callback({
-        status: "failed",
-        code: 200,
-      })
-      console.log(error)
-    } else {
+  console.log({ event })
+  console.log({ context })
+  client.messages
+    .create({
+      body: "This is the ship that made the Kessel Run in fourteen parsecs?",
+      from: "+12029184096",
+      to: "+3104051257",
+    })
+    .then(message => {
+      console.log(message.sid)
       callback({
         status: "success",
         code: 200,
       })
-      console.log("Email sent: " + info.response)
-    }
-  })
+    })
+    .catch(error => {
+      console.log(error)
+    })
 }
