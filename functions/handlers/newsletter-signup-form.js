@@ -32,7 +32,8 @@ module.exports = function(body, callback) {
       function(err) {
         if (err) {
           console.log(
-            "Error(newsletter-signup-form): Failed to write a row to the newsletter spreadsheet"
+            "Error(newsletter-signup-form): Failed to write a row to the newsletter spreadsheet",
+            { err }
           )
           return
         }

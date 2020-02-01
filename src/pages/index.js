@@ -97,7 +97,7 @@ const IndexPage = () => (
         <Card
           backgroundColor={"#182a4f"}
           cardClassName="pa3 relative"
-          style={{ minHeight: "300px" }}
+          style={{ minHeight: "278px" }}
         >
           <NewsletterForm />
         </Card>
