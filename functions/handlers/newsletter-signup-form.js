@@ -19,11 +19,13 @@ const credentials = {
 }
 
 module.exports = function(body, callback) {
-  doc.useServiceAccountAuth(credentials, function() {
-    console.log(
-      "Error(newsletter-signup-form): Failed to authenticate with Google auth provider",
-      { err }
-    )
+  doc.useServiceAccountAuth(credentials, function(err) {
+    if (err) {
+      console.log(
+        "Error(newsletter-signup-form): Failed to authenticate with Google auth provider",
+        { err }
+      )
+    }
     doc.addRow(
       1,
       {
