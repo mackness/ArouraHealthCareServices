@@ -1,4 +1,4 @@
-require("").config()
+require("dotenv").config()
 const client = require("twilio")(
   process.env.TWILLIO_ACCOUNT_SID,
   process.env.TWILLIO_ACCOUNT_AUTH_TOKEN
