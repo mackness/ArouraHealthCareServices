@@ -9,7 +9,13 @@ import CheckboxInput from "./CheckboxInput"
 export default function CandidateInfoForm() {
   return (
     <Form>
-      {({ state, handleChange, handleAttachment, handleSubmit }) => {
+      {({
+        state,
+        handleChange,
+        handleAttachment,
+        handleCheckBoxChange,
+        handleSubmit,
+      }) => {
         return (
           <div className="sans-serif">
             <form
@@ -89,7 +95,7 @@ export default function CandidateInfoForm() {
                 name="newsletterCheckbox"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Sign up for our newsletter"
-                onChange={handleChange}
+                onClick={handleCheckBoxChange}
                 value={state.newsLetterCheckbox || ""}
                 style={{ WebkitAppearance: "checkbox", width: "auto" }}
               />

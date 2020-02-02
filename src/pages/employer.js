@@ -14,7 +14,7 @@ const EmployerInfo = () => (
   <Layout>
     <SEO title="Employer Info Form" />
     <Header>
-      <div className="mw8 center pa4 tc-ns mt4-ns">
+      <div className="mw7 center pa4 tc-ns mt4-ns">
         <h2 className="serif text-shadow f2 fw1 white mb2 lh-title">
           Please tell us a little more about the ideal canidate for your open
           position

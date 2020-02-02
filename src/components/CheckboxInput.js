@@ -10,7 +10,7 @@ export default function CheckboxInput({
   containerClassName,
   inputClassName,
   type,
-  onChange,
+  onClick,
   value,
   style,
 }) {
@@ -27,7 +27,7 @@ export default function CheckboxInput({
         name={name}
         className={cx(inputClassName)}
         type={"checkbox"}
-        onChange={onChange}
+        onClick={onClick}
         value={value || ""}
         aria-describedby={name}
         style={style ? style : {}}

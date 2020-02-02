@@ -69,8 +69,18 @@ class Form extends React.Component {
     this.setState({ [event.target.name]: event.target.files[0] })
   }
 
+  handleCheckBoxChange = event => {
+    this.setState({ [event.target.name]: event.target.checked.toString() })
+  }
+
   render() {
-    const { handleSubmit, handleChange, handleAttachment, state } = this
+    const {
+      handleSubmit,
+      handleChange,
+      handleAttachment,
+      handleCheckBoxChange,
+      state,
+    } = this
 
     if (this.state.submitState === submitState.pending) {
       return <Loader />
@@ -110,6 +120,7 @@ class Form extends React.Component {
     return this.props.children({
       handleSubmit,
       handleChange,
+      handleCheckBoxChange,
       handleAttachment,
       state,
     })
