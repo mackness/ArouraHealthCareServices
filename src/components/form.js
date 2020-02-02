@@ -18,9 +18,6 @@ class Form extends React.Component {
   }
 
   encode(data) {
-    // return Object.keys(data)
-    //   .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    //   .join("&")
     const formData = new FormData()
 
     for (const key of Object.keys(data)) {
@@ -41,7 +38,6 @@ class Form extends React.Component {
     })
     fetch("/", {
       method: "POST",
-      //   headers: { "Content-Type": "multipart/form-data" },
       body: this.encode({
         ["form-name"]: event.target.getAttribute("name"),
         ...this.state,

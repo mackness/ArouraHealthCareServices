@@ -12,7 +12,7 @@ const forms = {
   CONTACT_PAGE_CONTACT_FORM: "contact-page-contact-from",
   NEWSLETTER_SIGNUP_FORM: "newsletter-signup-form",
   EMPLOYER_INFO_FORM: "employer-info-form",
-  CANDIDATE_INFO_FORM: "employee-info-form",
+  CANDIDATE_INFO_FORM: "candidate-info-form",
 }
 
 exports.handler = function(event, context, callback) {

@@ -9,7 +9,7 @@ const { formatBodyString } = require("../helpers")
 module.exports = function(body, callback) {
   client.messages
     .create({
-      body: formatBodyString(_.get(body, "payload.ordered_human_fields")),
+      body: formatBodyString(body),
       from: process.env.TWILLIO_ACCOUNT_PHONE_NUMNER,
       to: process.env.TARGET_CELL_PHONE_NUMBER,
     })
