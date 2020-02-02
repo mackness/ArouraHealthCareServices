@@ -4,6 +4,7 @@ const {
   homePageContactForm,
   newsletterSignupForm,
   employerInfoForm,
+  candidateInfoForm,
 } = require("./handlers")
 const { decodePayload } = require("./helpers")
 
@@ -29,8 +30,9 @@ exports.handler = function(event, context, callback) {
     case forms.NEWSLETTER_SIGNUP_FORM:
       newsletterSignupForm(body, callback)
     case forms.EMPLOYER_INFO_FORM:
-    case forms.CANDIDATE_INFO_FORM:
       employerInfoForm(body, callback)
+    case forms.CANDIDATE_INFO_FORM:
+      candidateInfoForm(body, callback)
       break
     default:
       console.log(

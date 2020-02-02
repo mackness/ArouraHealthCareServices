@@ -7,4 +7,5 @@ module.exports = {
   homePageContactForm,
   newsletterSignupForm,
   employerInfoForm,
+  candidateInfoForm,
 }
