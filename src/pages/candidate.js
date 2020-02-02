@@ -16,7 +16,7 @@ const EmployerInfo = () => (
     <Header>
       <div className="mw8 center pa4 tc-ns mt4-ns">
         <h2 className="serif text-shadow f2 fw1 white mb2 lh-title">
-          Candidate info form
+          Please give us some information so we can find the right job for you
         </h2>
         <div className="flex justify-center-ns">
           <div className="divider bg-white-90 mv4 mh"></div>
