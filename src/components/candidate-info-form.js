@@ -15,7 +15,7 @@ export default function CandidateInfoForm() {
               className="black-80 mb0"
               onSubmit={handleSubmit}
               data-netlify="true"
-              name="employee-info-form"
+              name="candidate-info-form"
               data-netlify-honeypot="bot-field"
             >
               <TextInput

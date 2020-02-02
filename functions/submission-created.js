@@ -12,6 +12,7 @@ const forms = {
   CONTACT_PAGE_CONTACT_FORM: "contact-page-contact-from",
   NEWSLETTER_SIGNUP_FORM: "newsletter-signup-form",
   EMPLOYER_INFO_FORM: "employer-info-form",
+  CANDIDATE_INFO_FORM: "employee-info-form",
 }
 
 exports.handler = function(event, context, callback) {
@@ -28,6 +29,7 @@ exports.handler = function(event, context, callback) {
     case forms.NEWSLETTER_SIGNUP_FORM:
       newsletterSignupForm(body, callback)
     case forms.EMPLOYER_INFO_FORM:
+    case forms.CANDIDATE_INFO_FORM:
       employerInfoForm(body, callback)
       break
     default:
