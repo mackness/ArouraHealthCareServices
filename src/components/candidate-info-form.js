@@ -69,8 +69,6 @@ export default function CandidateInfoForm() {
                 label="Please upload your resume in .PDF or .DOC format"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 onChange={handleAttachment}
-                value={""}
-                type="text"
               />
 
               <div className="flex justify-center-ns">
