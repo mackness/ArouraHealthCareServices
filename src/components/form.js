@@ -1,4 +1,5 @@
 import React from "react"
+import get from "lodash/get"
 import Loader from "./loader"
 
 const submitState = {
@@ -74,7 +75,7 @@ class Form extends React.Component {
           <p
             className="brand-blue mt2 mb2 fw7 f5 lh-copy ma0"
             style={
-              this.props.message.color
+              get(this, "props.message.color")
                 ? { color: this.props.message.color }
                 : {}
             }
@@ -86,7 +87,7 @@ class Form extends React.Component {
           <p
             className="matrix-subtitle black-70"
             style={
-              this.props.message.color
+              get(this, "props.message.color")
                 ? { color: this.props.message.color }
                 : {}
             }

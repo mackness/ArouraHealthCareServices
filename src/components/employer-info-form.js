@@ -82,7 +82,7 @@ export default function EmployerInfoForm() {
                 type="text"
                 type="text"
                 onChange={handleChange}
-                value={state.email || ""}
+                value={state.phone || ""}
               />
 
               <TextInput

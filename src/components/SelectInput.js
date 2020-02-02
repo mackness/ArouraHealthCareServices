@@ -28,11 +28,12 @@ export default function TextInput({
         onChange={onChange}
         value={value || ""}
         aria-describedby={name}
+        value={value}
       >
         {[
-          <option>Please select a number...</option>,
+          <option key={-10}>Please select a number...</option>,
           ...options.map((_value, i) => (
-            <option value={i + 1} selected={value === _value}>
+            <option key={i} value={_value}>
               {_value}
             </option>
           )),

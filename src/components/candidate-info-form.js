@@ -76,6 +76,16 @@ export default function CandidateInfoForm() {
                 type="text"
               />
 
+              <TextInput
+                name="newsletter"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="Sign up for our newsletter"
+                type="checkbox"
+                type="checkbox"
+                onChange={handleChange}
+                value={state.newsletter || ""}
+              />
+
               <button
                 className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3 w-100 tc mt3 mb0"
                 type="submit"

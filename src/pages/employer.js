@@ -28,6 +28,7 @@ const EmployerInfo = () => (
       <Card
         style={{
           marginTop: "-65px",
+          minHeight: "650px",
         }}
       >
         <EmployerInfoForm />
