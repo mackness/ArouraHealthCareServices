@@ -34,7 +34,8 @@ exports.handler = function(event, context, callback) {
       break
     default:
       console.log(
-        `Error(submission-created): Invalid submission, no matching form hanlder`
+        `Error(submission-created): Invalid submission, no matching form hanlder`,
+        { form_name: _.get(body, "payload.form_name") }
       )
   }
 }
