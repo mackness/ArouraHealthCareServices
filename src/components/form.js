@@ -18,7 +18,6 @@ class Form extends React.Component {
   }
 
   encode(data) {
-    console.log(data)
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&")
@@ -63,8 +62,12 @@ class Form extends React.Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  handleAttachment = event => {
+    this.setState({ [event.target.name]: event.target.files[0] })
+  }
+
   render() {
-    const { handleSubmit, handleChange, state } = this
+    const { handleSubmit, handleChange, handleAttachment, state } = this
 
     if (this.state.submitState === submitState.pending) {
       return <Loader />
@@ -104,6 +107,7 @@ class Form extends React.Component {
     return this.props.children({
       handleSubmit,
       handleChange,
+      handleAttachment,
       state,
     })
   }

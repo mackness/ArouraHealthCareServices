@@ -20,6 +20,7 @@ export default function TextInput({
         })`}</span>
       </label>
       <input
+        required={isRequired}
         id={name}
         name={name}
         className={cx(inputClassName)}

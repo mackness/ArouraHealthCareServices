@@ -1,4 +1,5 @@
 import React from "react"
+import get from "lodash/get"
 import Form from "./form"
 import TextInput from "./TextInput"
 import FileInput from "./FileInput"
@@ -8,7 +9,7 @@ import CheckboxInput from "./CheckboxInput"
 export default function CandidateInfoForm() {
   return (
     <Form>
-      {({ state, handleChange, handleSubmit }) => {
+      {({ state, handleChange, handleAttachment, handleSubmit }) => {
         return (
           <div className="sans-serif">
             <form
@@ -19,53 +20,62 @@ export default function CandidateInfoForm() {
               data-netlify-honeypot="bot-field"
             >
               <TextInput
+                isRequired
                 name="firstName"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="First Name"
-                type="text"
                 type="text"
                 onChange={handleChange}
                 value={state.firstName || ""}
               />
 
               <TextInput
+                isRequired
                 name="lastName"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Last name"
-                type="text"
                 type="text"
                 onChange={handleChange}
                 value={state.lastName || ""}
               />
 
               <TextInput
+                isRequired
                 name="phone"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Phone"
-                type="text"
-                type="text"
+                type="tel"
                 onChange={handleChange}
                 value={state.phone || ""}
               />
 
               <TextInput
+                isRequired
                 name="email"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="E-mail"
-                type="text"
                 type="text"
                 onChange={handleChange}
                 value={state.email || ""}
               />
 
+              <div className="flex justify-center-ns">
+                <div className="divider bg-moon-gray mv4 mh"></div>
+              </div>
+
               <FileInput
+                isRequired
                 name="fileInput"
                 label="Please upload your resume in .PDF or .DOC format"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
-                onChange={handleChange}
-                value={state.fileInput || ""}
+                onChange={handleAttachment}
+                value={""}
                 type="text"
               />
+
+              <div className="flex justify-center-ns">
+                <div className="divider bg-moon-gray mv4 mh"></div>
+              </div>
 
               <TextAreaInput
                 name="message"
