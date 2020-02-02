@@ -14,9 +14,10 @@ const EmployerInfo = () => (
   <Layout>
     <SEO title="Candidate info form" />
     <Header>
-      <div className="mw8 center pa4 tc-ns mt4-ns">
+      <div className="mw7 center pa4 tc-ns mt4-ns">
         <h2 className="serif text-shadow f2 fw1 white mb2 lh-title">
-          Please give us some information so we can find the right job for you
+          please provide your information so we can help you with your next
+          career move
         </h2>
         <div className="flex justify-center-ns">
           <div className="divider bg-white-90 mv4 mh"></div>
