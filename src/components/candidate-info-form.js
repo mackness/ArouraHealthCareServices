@@ -3,6 +3,7 @@ import Form from "./form"
 import TextInput from "./TextInput"
 import FileInput from "./FileInput"
 import TextAreaInput from "./TextAreaInput"
+import CheckboxInput from "./CheckboxInput"
 
 export default function CandidateInfoForm() {
   return (
@@ -44,7 +45,7 @@ export default function CandidateInfoForm() {
                 type="text"
                 type="text"
                 onChange={handleChange}
-                value={state.email || ""}
+                value={state.phone || ""}
               />
 
               <TextInput
@@ -76,14 +77,13 @@ export default function CandidateInfoForm() {
                 type="text"
               />
 
-              <TextInput
-                name="newsletter"
+              <CheckboxInput
+                name="newsletterCheckbox"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Sign up for our newsletter"
-                type="checkbox"
-                type="checkbox"
                 onChange={handleChange}
-                value={state.newsletter || ""}
+                value={state.newsLetterCheckbox || ""}
+                style={{ WebkitAppearance: "checkbox", width: "auto" }}
               />
 
               <button

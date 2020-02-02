@@ -1,0 +1,33 @@
+.bn {
+  border-style: none;
+  border-width: 0;
+  -webkit-appearance: "checkbox" !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.fw7 {
+  font-weight: 700;
+}
+
+.lh-copy {
+  line-height: 1.5;
+}
+
+.pa4 {
+  padding: 2rem;
+}
+
+.mr2 {
+  margin-right: 0.5rem;
+}
+
+.mb2 {
+  margin-bottom: 0.5rem;
+}
