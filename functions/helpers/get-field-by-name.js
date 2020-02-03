@@ -1,3 +1,5 @@
+const _ = require("lodash")
+
 module.exports = function getFieldByName(fields, name) {
   return _.find(
     _.get(fields, "payload.ordered_human_fields"),
