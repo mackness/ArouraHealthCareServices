@@ -1,10 +1,8 @@
 require("dotenv").config()
 const _ = require("lodash")
 const {
-  homePageContactForm,
-  newsletterSignupForm,
-  employerInfoForm,
-  candidateInfoForm,
+  newsletterSignupFormSubmissionHandler,
+  generalFormSubmissionHandler,
 } = require("./handlers")
 const { decodePayload } = require("./helpers")
 
@@ -17,22 +15,17 @@ const forms = {
 }
 
 exports.handler = function(event, context, callback) {
-  console.log({ event })
-  console.log({ context })
-
   const body = decodePayload(event.body)
 
   switch (_.get(body, "payload.form_name")) {
     case forms.CONTACT_PAGE_CONTACT_FORM:
     case forms.HOMEPAGE_CONTACT_FORM:
-      homePageContactForm(body, callback)
+    case forms.CANDIDATE_INFO_FORM:
+    case forms.EMPLOYER_INFO_FORM:
+      generalFormSubmissionHandler(body, callback)
       break
     case forms.NEWSLETTER_SIGNUP_FORM:
-      newsletterSignupForm(body, callback)
-    case forms.EMPLOYER_INFO_FORM:
-      employerInfoForm(body, callback)
-    case forms.CANDIDATE_INFO_FORM:
-      candidateInfoForm(body, callback)
+      newsletterSignupFormSubmissionHandler(body, callback)
       break
     default:
       console.log(

@@ -1,11 +1,7 @@
-const homePageContactForm = require("./homepage-contact-form")
-const newsletterSignupForm = require("./newsletter-signup-form")
-const employerInfoForm = require("./employer-info-form")
-const candidateInfoForm = require("./candidate-info-form")
+const newsletterSignupFormSubmissionHandler = require("./newsletter-signup-form")
+const generalFormSubmissionHandler = require("./general-form-submission-handler")
 
 module.exports = {
-  homePageContactForm,
-  newsletterSignupForm,
-  employerInfoForm,
-  candidateInfoForm,
+  newsletterSignupFormSubmissionHandler,
+  generalFormSubmissionHandler,
 }
