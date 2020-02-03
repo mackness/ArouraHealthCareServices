@@ -27,6 +27,7 @@ const ContactPage = () => (
       <Card
         style={{
           marginTop: "-65px",
+          minHeight: "550px",
         }}
       >
         <ContactForm />

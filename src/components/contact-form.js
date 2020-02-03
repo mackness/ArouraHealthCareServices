@@ -1,12 +1,15 @@
 import React from "react"
 import Form from "./form"
+import TextAreaInput from "./TextAreaInput"
+import CheckboxInput from "./CheckboxInput"
+import TextInput from "./TextInput"
 
 import "./contact-form.css"
 
 export default function ContactForm() {
   return (
     <Form>
-      {({ state, handleChange, handleSubmit }) => {
+      {({ state, handleChange, handleSubmit, handleCheckBoxChange }) => {
         return (
           <div className="sans-serif">
             <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
@@ -22,66 +25,58 @@ export default function ContactForm() {
               name="contact-page-contact-from"
               data-netlify-honeypot="bot-field"
             >
-              <div className="measure">
-                <label htmlFor="name" className="f6 b db mb2">
-                  Name <span className="normal black-60">(optional)</span>
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  className="input-reset ba b--black-20 pa2 mb2 db w-100"
-                  type="text"
-                  onChange={handleChange}
-                  value={state.name || ""}
-                  aria-describedby="name-desc"
-                />
-              </div>
-              <div className="measure">
-                <label htmlFor="telephone" className="f6 b db mb2">
-                  Phone number{" "}
-                  <span className="normal black-60">(optional)</span>
-                </label>
-                <input
-                  id="telephone"
-                  name="telephone"
-                  type="tel"
-                  className="input-reset ba b--black-20 pa2 mb2 db w-100"
-                  onChange={handleChange}
-                  value={state.telephone || ""}
-                  aria-describedby="tel-desc"
-                />
-              </div>
-              <div className="measure">
-                <label htmlFor="email" className="f6 b db mb2">
-                  E-mail <span className="normal black-60">(optional)</span>
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  className="input-reset ba b--black-20 pa2 mb2 db w-100"
-                  type="text"
-                  onChange={handleChange}
-                  value={state.email || ""}
-                  aria-describedby="email-desc"
-                />
-              </div>
-              <div className="measure">
-                <label htmlFor="message" className="f6 b db mb2">
-                  A breif message{" "}
-                  <span className="normal black-60">(optional)</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  onChange={handleChange}
-                  value={state.message || ""}
-                  min-height="250px"
-                  className="input-reset ba b--black-20 pa2 mb2 db w-100"
-                  type="text"
-                  aria-describedby="message-desc"
-                />
-              </div>
+              <TextInput
+                isRequired
+                name="firstName"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="First Name"
+                type="text"
+                type="text"
+                onChange={handleChange}
+                value={state.firstName || ""}
+              />
+
+              <TextInput
+                isRequired
+                name="lastName"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="Last name"
+                type="text"
+                type="text"
+                onChange={handleChange}
+                value={state.lastName || ""}
+              />
+
+              <TextInput
+                isRequired
+                name="email"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="E-mail"
+                type="text"
+                type="text"
+                onChange={handleChange}
+                value={state.email || ""}
+              />
+
+              <TextAreaInput
+                name="message"
+                label="A breif message"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                onChange={handleChange}
+                value={state.message || ""}
+                minHeight={350}
+                type="text"
+              />
+
+              <CheckboxInput
+                name="newsletterCheckbox"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="Sign up for our newsletter"
+                onClick={handleCheckBoxChange}
+                value={state.newsLetterCheckbox || ""}
+                style={{ WebkitAppearance: "checkbox", width: "auto" }}
+              />
+
               <button
                 className="button f6 no-underline grow dib v-mid white ba ph3 pv2 mb3 w-100 tc mt3 mb0"
                 type="submit"
