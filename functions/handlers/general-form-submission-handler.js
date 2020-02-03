@@ -1,5 +1,6 @@
 const _ = require("lodash")
 const { sendTextMessage } = require("../actions")
+const { getFieldByName } = require("../helpers")
 
 module.exports = function(body, callback) {
   if (
