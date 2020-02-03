@@ -3,11 +3,12 @@ import Form from "./form"
 import TextInput from "./TextInput"
 import SelectInput from "./SelectInput"
 import TextAreaInput from "./TextAreaInput"
+import CheckboxInput from "./CheckboxInput"
 
 export default function EmployerInfoForm() {
   return (
     <Form>
-      {({ state, handleChange, handleSubmit }) => {
+      {({ state, handleChange, handleCheckBoxChange, handleSubmit }) => {
         return (
           <div className="sans-serif">
             {/* <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
@@ -26,6 +27,7 @@ export default function EmployerInfoForm() {
               data-netlify-honeypot="bot-field"
             >
               <TextInput
+                isRequired
                 name="firstName"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="First Name"
@@ -36,6 +38,7 @@ export default function EmployerInfoForm() {
               />
 
               <TextInput
+                isRequired
                 name="lastName"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Last name"
@@ -46,6 +49,7 @@ export default function EmployerInfoForm() {
               />
 
               <TextInput
+                isRequired
                 name="companyName"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Company name"
@@ -56,6 +60,7 @@ export default function EmployerInfoForm() {
               />
 
               <TextInput
+                isRequired
                 name="positionTitle"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="Position title"
@@ -66,6 +71,7 @@ export default function EmployerInfoForm() {
               />
 
               <TextInput
+                isRequired
                 name="email"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="E-mail"
@@ -95,7 +101,12 @@ export default function EmployerInfoForm() {
                 value={state.websiteAddress || ""}
               />
 
+              <div className="flex justify-center-ns">
+                <div className="divider bg-moon-gray mv4 mh"></div>
+              </div>
+
               <SelectInput
+                isRequired
                 name="positions"
                 inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
                 label="How many positions are you hiring for?"
@@ -106,6 +117,10 @@ export default function EmployerInfoForm() {
                 value={state.positions || ""}
               />
 
+              <div className="flex justify-center-ns">
+                <div className="divider bg-moon-gray mv4 mh"></div>
+              </div>
+
               <TextAreaInput
                 name="message"
                 label="A breif message"
@@ -114,6 +129,15 @@ export default function EmployerInfoForm() {
                 value={state.message || ""}
                 minHeight={350}
                 type="text"
+              />
+
+              <CheckboxInput
+                name="newsletterCheckbox"
+                inputClassName="input-reset ba b--black-20 pa2 mb2 db w-100"
+                label="Sign up for our newsletter"
+                onClick={handleCheckBoxChange}
+                value={state.newsLetterCheckbox || ""}
+                style={{ WebkitAppearance: "checkbox", width: "auto" }}
               />
 
               <button
