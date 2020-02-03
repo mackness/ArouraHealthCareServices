@@ -7,7 +7,10 @@ module.exports = function(body, callback) {
     _.get(getFieldByName(body, "newsletterCheckbox"), "value", "false") ===
     "true"
   ) {
-    writeToNewsLetterTable(_.get(getFieldByName(body, "email"), "value"))
+    writeToNewsLetterTable(
+      _.get(getFieldByName(body, "email"), "value"),
+      callback
+    )
   }
   sendTextMessage(_.get(body, "payload.ordered_human_fields"), callback)
 }
