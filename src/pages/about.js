@@ -34,44 +34,18 @@ const AboutPage = () => (
         <h4 className="brand-blue sans-serif mt2 mb3 fw7 f3 lh-copy ma0">
           Reach out to us!
         </h4>
+
         <p>
-          If you are looking for talented professionals, contact Sterling and
-          Landers. We're recruiting specialists and have been a valuable
-          resource partner for many clients since 2013. If you are looking for
-          talented professionals, contact Sterling and Landers. We're recruiting
-          specialists and have been a valuable resource partner for many clients
-          since 2013. If you are looking for talented professionals, contact
-          Sterling and Landers. We're recruiting specialists and have been a
-          valuable resource partner for many clients since 2013. If you are
-          looking for talented professionals, contact Sterling and Landers.
-          We're recruiting specialists and have been a valuable resource partner
-          for many clients since 2013.
+          A Premier Home Health and Hospice Talent Resource Providing
+          experienced people who are passionate about caring for your patients
+          and your business.{" "}
         </p>
+
         <p>
-          If you are looking for talented professionals, contact Sterling and
-          Landers. We're recruiting specialists and have been a valuable
-          resource partner for many clients since 2013. If you are looking for
-          talented professionals, contact Sterling and Landers. We're recruiting
-          specialists and have been a valuable resource partner for many clients
-          since 2013. If you are looking for talented professionals, contact
-          Sterling and Landers. We're recruiting specialists and have been a
-          valuable resource partner for many clients since 2013. If you are
-          looking for talented professionals, contact Sterling and Landers.
-          We're recruiting specialists and have been a valuable resource partner
-          for many clients since 2013.
-        </p>
-        <p>
-          If you are looking for talented professionals, contact Sterling and
-          Landers. We're recruiting specialists and have been a valuable
-          resource partner for many clients since 2013. If you are looking for
-          talented professionals, contact Sterling and Landers. We're recruiting
-          specialists and have been a valuable resource partner for many clients
-          since 2013. If you are looking for talented professionals, contact
-          Sterling and Landers. We're recruiting specialists and have been a
-          valuable resource partner for many clients since 2013. If you are
-          looking for talented professionals, contact Sterling and Landers.
-          We're recruiting specialists and have been a valuable resource partner
-          for many clients since 2013.
+          Our greatest strength is our knowledge about your business. With over
+          12 years of experience placing professionals for home health and
+          hospice, we understand your needs. Our intention is to make a highly
+          successful match where everyone involved thrives.
         </p>
       </Card>
       <div className="w-34-l">

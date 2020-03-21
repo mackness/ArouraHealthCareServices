@@ -7,7 +7,7 @@ export default function ServicesMatrix() {
   return (
     <div className="mw9 center">
       <div className="cf ph2-ns flex-l">
-        <div className="fl w-100 w-25-ns pr4-l">
+        <div className="fl w-100 w-50-m w-25-ns pr4-l">
           <div className="bg-white">
             <FaIcon
               fontSize="35px"
