@@ -6,3 +6,5 @@ cd ArouraHealthCareServices
 npm install
 npm run develop
 ```
+
+Navigate to http://localhost:8000/
